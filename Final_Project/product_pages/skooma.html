@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>METAfiction Skooma</title>
+	<link rel="stylesheet" type="text/css" href="template.css">
+	<!-- Font awesome library-->
+	<!-- <link href="css/font-awesome.min.css" rel="stylesheet" /> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#sidebarButton').click(function(){
+				$('#sidebar').toggleClass('visible');
+			});
+		});
+	</script>
+
+</head>
+<body>	
+	<section id="sidebar">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Shop</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact Me</a></li>
+			<li><a href="#">Concept Log</a></li>
+			<li><a href="#">Locations</a></li>
+		</ul>
+
+		<div id="sidebarButton">
+		<span></span>
+		<span></span>
+		<span></span>
+		</div>
+	</section>
+
+	<section id="topbar">
+		<div id="logo" class="topbar">METAfiction</div>
+		<div id="cart" class="topbar">Cart</div>
+		<div id="cartCounter" class="topbar"><div id="fillCounter"></div>0</div>
+	</section>	
+
+	<section class="intro">
+		<div id="pageTitle">Skooma</div>
+		<br>
+		<div id="homeImage"></div>
+	</section>
+
+	<section class="productDetails">
+		<div id="productTitle">Product Description</div>
+
+		<p>Skooma is an illegal narcotic that is used throughout Tamriel.
+		<br><br>
+		Skooma was made and perfected by the Dunmer, by way of mixing of Moon Sugar and Nightshade.Since then, the drug has been used across the continent.
+		<br></br>
+		When used, Skooma increases the user's strength, speed, and restores stamina. Some of the more addictive effects of the drug are bouts of euphoria, protracted lethargy, loss of voice, minor fits, and possibly death. Consume responsibly.
+		<br><br>
+		"Skooma is distilled from moon-sugar, which is sacred to we who worship the moon and stars. But those who use skooma for pleasure quickly become slaves to its visions." -Zulana
+		<br><br>
+		</p>
+
+		<div id="productVideo" class="productDetails">
+			We have disallowed viewership of this advertisement for the time being. We apologize for any inconvenience.
+		</div>
+
+		<section class="productDetails">
+			<!-- <div>Index</div> -->
+			<!-- <div id="indexImage"></div> -->
+		</section>
+	</section>
+
+	<style type="text/css">
+		.intro #homeImage{
+		background: url(https://img04.deviantart.net/5e23/i/2014/041/a/5/skyrim_skooma_wallapaper_by_askskullyy-d75wnzz.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 600px;
+		width: 1000px;
+		margin: auto;
+		border-radius: 5%;
+		}
+
+	</style>
+
+</body>
+<!-- Add footer if there's time (in footer place FB,Twttr,LkdIn,Email handles) -->
+<!-- Place Contact info -->
+</html>

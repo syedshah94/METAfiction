@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>METAfiction Slurm</title>
+	<link rel="stylesheet" type="text/css" href="template.css">
+	<!-- Font awesome library-->
+	<!-- <link href="css/font-awesome.min.css" rel="stylesheet" /> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#sidebarButton').click(function(){
+				$('#sidebar').toggleClass('visible');
+			});
+		});
+	</script>
+
+</head>
+<body>	
+	<section id="sidebar">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Shop</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact Me</a></li>
+			<li><a href="#">Concept Log</a></li>
+			<li><a href="#">Locations</a></li>
+		</ul>
+
+		<div id="sidebarButton">
+		<span></span>
+		<span></span>
+		<span></span>
+		</div>
+	</section>
+
+	<section id="topbar">
+		<div id="logo" class="topbar">METAfiction</div>
+		<div id="cart" class="topbar">Cart</div>
+		<div id="cartCounter" class="topbar"><div id="fillCounter"></div>0</div>
+	</section>	
+
+	<section class="intro">
+		<div id="pageTitle">Slurm</div>
+		<br>
+		<div id="homeImage"></div>
+	</section>
+
+	<section class="productDetails">
+		<div id="productTitle">Product Description</div>
+
+		<p>Slurm is a fictional soft drink in the Futurama multiverse, made on the Planet Wormulon, produced by a giant slug queen (oh wait, you're not supposed to know that). Err-Forget the last part!
+		<br><br>
+		The drink's slogan is 'It's Highly Addictive!' and its distribution is handled by Bureau of Soft Drinks, Tobacco, and Firearms, a parody of the Bureau of Alcohol, Tobacco, and Firearms. 
+		<br><br>
+		The queen can produce a highly concentrated super Slurn, thats even more addictive than its commercial counterpart. Even the queen is addicted to--nevermind...
+		<br><br>
+		</p>
+
+		<div id="productVideo">
+			<iframe width="840px" height="540px"
+				src="https://www.youtube.com/embed/VtbuW_9hXKg">
+			</iframe>
+		</div>
+
+		<section class="productDetails">
+			<!-- <div>Index</div> -->
+			<!-- <div id="indexImage"></div> -->
+		</section>
+	</section>
+
+	<style type="text/css">
+		.intro #homeImage{
+		background: url(http://cdn.collider.com/wp-content/uploads/2016/02/futurama-slurm-poster.jpg);
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 600px;
+		width: 1000px;
+		margin: auto;
+		border-radius: 5%;
+		}
+
+	</style>
+
+</body>
+<!-- Add footer if there's time (in footer place FB,Twttr,LkdIn,Email handles) -->
+<!-- Place Contact info -->
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home METAfiction</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<!-- Font awesome library-->
+	<!-- <link href="css/font-awesome.min.css" rel="stylesheet" /> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#sidebarButton').click(function(){
+				$('#sidebar').toggleClass('visible');
+			});
+		});
+
+	</script>
+
+</head>
+<body>	
+	<section id="sidebar">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="#">Shop</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact Me</a></li>
+			<li><a href="#">Concept Log</a></li>
+			<li><a href="#">Locations</a></li>
+		</ul>
+
+		<div id="sidebarButton">
+		<span></span>
+		<span></span>
+		<span></span>
+		</div>
+	</section>
+
+	<section id="topbar">
+		<div id="logo" class="topbar">METAfiction</div>
+		<div id="cart" class="topbar">Cart</div>
+		<div id="cartCounter" class="topbar"><div id="fillCounter"></div>0</div>
+	</section>	
+	
+
+	<section class="intro">
+		<div id="pageTitle">Fake Products For Real People</div>
+		<div id="pageTagline">Inspirational mission statement here</div>
+		<div id="homeImage">
+			<div id="textInHomeImage">
+				<div id=text1>Venture</div>
+				<p id="text2">Acquired via interdimensional space travel, we have
+				products available from several universes. Place your order today!</p>
+			</div>
+		</div>
+
+		<!-- Product section -->
+		<section class="productSection">
+		<br>
+			<div id="productLeft" class="twoColumns"></div>
+			<div id="productRight" class="twoColumns"></div>
+		</section>
+
+		<section class="productSelect">
+			<div class="explore"><a href="../product_pages/portalGun.html">Explore More</a></div>
+			<div class="explore"><a href="../product_pages/slurm.html">Explore More</a></div>
+		</section>
+
+		<!-- Repeat Product section -->
+		<section class="productSection">
+		<br>
+			<div id="productLeft2" class="twoColumns"></div>
+			<div id="productRight2" class="twoColumns"></div>
+		</section>
+
+		<section class="productSelect">
+			<div class="explore"><a href="../product_pages/skooma.html">Explore More</a></div>
+			<div class="explore"><a href="../product_pages/plumbus.html">Explore More</a></div>
+		</section>
+	
+	</section>
+
+</body>
+<!-- Add footer if there's time (in footer place FB,Twttr,LkdIn,Email handles) -->
+<!-- Place Contact info -->
+</html>

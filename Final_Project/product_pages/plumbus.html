@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>METAfiction Plumbus</title>
+	<link rel="stylesheet" type="text/css" href="template.css">
+	<!-- Font awesome library-->
+	<!-- <link href="css/font-awesome.min.css" rel="stylesheet" /> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#sidebarButton').click(function(){
+				$('#sidebar').toggleClass('visible');
+			});
+		});
+	</script>
+
+</head>
+<body>	
+	<section id="sidebar">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Shop</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact Me</a></li>
+			<li><a href="#">Concept Log</a></li>
+			<li><a href="#">Locations</a></li>
+		</ul>
+
+		<div id="sidebarButton">
+		<span></span>
+		<span></span>
+		<span></span>
+		</div>
+	</section>
+
+	<section id="topbar">
+		<div id="logo" class="topbar">METAfiction</div>
+		<div id="cart" class="topbar">Cart</div>
+		<div id="cartCounter" class="topbar"><div id="fillCounter"></div>0</div>
+	</section>	
+
+	<section class="intro">
+		<div id="pageTitle">Plumbus</div>
+		<br>
+		<div id="homeImage"></div>
+	</section>
+
+	<section class="productDetails">
+		<div id="productTitle">Product Description</div>
+
+		<p>A Plumbus is an all purpose home device. Everyone knows what it does, so there is no reason to explain it. It was first shown in the episode, "Interdimensional Cable 2: Tempting Fate" where it was seen twice on the Interdimensional TV First when Stealy stole one from a workplace and made a sale offer for it, and again in an episode of "How They Do It" that shows the viewers how plumbuses are made. They are mentioned as being a common household and business place item used as an accent piece to the room.
+		<br><br>
+		Plumbus or Plumbuses are worth six-and-a-half Brapples according to Stealy.
+		<br><br>
+		</p>
+
+		<div id="productVideo">
+			<iframe width="840px" height="540px"
+				src="https://www.youtube.com/embed/eMJk4y9NGvE">
+			</iframe>
+		</div>
+
+		<section class="productDetails">
+			<div>Index</div>
+			<div id="indexImage"></div>
+		</section>
+	</section>
+
+	<style type="text/css">
+		.intro #homeImage{
+		background: url(https://images4.sw-cdn.net/product/picture/710x528_12858382_7799140_1479998099.jpg);
+		background-size: cover;
+		height: 600px;
+		width: 1000px;
+		margin: auto;
+		border-radius: 5%;
+		}
+
+		.productDetails #indexImage{
+			background: url(http://i.imgur.com/6LKIG44.jpg);
+			background-size: cover;
+			
+			margin-top: 40px;
+			position: relative;
+			left: 19.5%;
+			height: 2700px;
+			width: 840px;
+			border: black solid 2px;
+		}
+	</style>
+
+</body>
+<!-- Add footer if there's time (in footer place FB,Twttr,LkdIn,Email handles) -->
+<!-- Place Contact info -->
+</html>

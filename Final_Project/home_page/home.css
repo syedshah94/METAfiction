@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+
+body{
+	
+}
+
+#sidebar{
+	margin: 0 auto;
+	padding: 0;
+	font-family: "Helverta Neue", Helvetica, Arial;
+
+	background:#151718;
+	width: 200px;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -200px; /* Just (-1 x width) */
+	transition: left 0.3s linear; /*take this left value and transition to it when .visible doesn't exist*/
+	z-index: 10; /*This will allow the verticle bar to go on top of the page elements*/
+}
+
+#sidebar.visible{
+	left:0;
+	transition: left 0.3s linear; /*take this left value and transition to it to
+	the left value of sidebar.visible when transition exists. We will add/remove this
+	with JS*/
+}
+
+ul{
+	margin:0;
+	padding: 0;
+	text-align: center;
+	padding-top: 50px;
+}
+ul li{
+	list-style: none;
+}
+
+ul li:hover{
+	border: #CDBFD6 solid 2px;
+	transition: .3s;
+}
+
+ul li a{
+	background:#1C1E1F;
+	color: #ccc;
+	border-bottom: 1px solid #111;
+	display: block;
+	width: 180px;
+	padding: 10px;
+	text-decoration: none;
+}
+
+#sidebarButton{
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 18px;
+	cursor: pointer;
+	margin: 20px;
+	position: absolute;
+	top: 20px;
+	right: -90px;
+	padding: 6px 6px;
+	border-radius: 20%;
+	background: #ccc;
+}
+#sidebarButton span{
+	height: 3px;
+	background:#5C69B0;
+	margin-bottom: 5px;
+	display: block; 
+}
+#sidebarButton:hover{
+	background: #eee;
+}
+
+
+
+#logo{
+	font-family: 'Lobster', cursive;
+	font-size: 42px;
+	color: #5C69B0;
+	padding-right: 55%;
+	padding-left: 150px;
+	padding-top: 30px;
+}
+
+.topbar{
+	display: inline-block;
+	padding-top: 10px;
+}
+
+section #cart {
+	font-family: "Yantramanav", sans-serif;
+	font-size: 42px;
+	padding-right: 10px;
+}
+section #cartCounter{
+	font-family: "Yantramanav", sans-serif;
+	font-size: 28px;
+
+	height: 15px;
+	width: 15px;
+	border-radius: 50%; 
+}
+section #fillCounter {
+	background: rgba(255,0,0,.5);
+	width: 24px;
+	height: 24px;
+	position: relative;
+	top: 28px;
+	left: -4.8px;
+	border-radius: 50%;
+}
+
+/*=========================================================================*/
+
+#topbar{
+	width: 100%;
+	height: 100px;
+	background: white;
+	border-bottom: solid black 1px;
+	z-index: 7;
+}
+#topbar, #sidebar{
+	position: fixed;
+	top: 0;
+
+}
+
+/*=========================================================================*/
+
+.intro{
+	text-align: center;
+}
+.intro #pageTitle{
+	font-family: "Yantramanav", sans-serif; 
+	font-size: 50px;
+	font-weight: bold;
+	padding: 120px 0px 0px 0px;
+
+}
+.intro #pageTagline{
+	font-family: "Yantramanav", sans-serif; 
+	font-size: 30px;
+	padding: 0px 0px 30px 0px;
+}
+
+.intro #homeImage{
+	background: url(https://i.ytimg.com/vi/Kar3mxwnEWw/maxresdefault.jpg);
+	background-size: cover;
+	height: 500px;
+	width: 1280px;
+	margin: auto;
+}
+
+/*------------------Template page Copy n' paste ends here (from home.css)-------------*/
+
+
+
+.intro #homeImage #textInHomeImage{
+	color: white;
+	font-family: "Yantramanav", sans-serif; 
+	width: 35%;
+	position: relative;
+	top: 30%;
+	left: 2%;
+}
+
+.intro #homeImage #textInHomeImage #text1{
+	font-size: 50px;
+	font-weight: bold; 
+}
+
+.intro #homeImage #textInHomeImage #text2{
+	font-size: 30px;
+}
+
+.twoColumns{
+	display: inline-block;
+}
+
+.productSection #productLeft{
+	background: url(http://dl36mmdz94630.cloudfront.net/uploads/assets/images/000/007/158/large/Portal_Gun.137.jpg?1388772938);
+	background-size: cover;
+	height: 400px;
+	width: 638px;
+}
+
+.productSection #productRight{
+	background: url(http://cdn.collider.com/wp-content/uploads/2016/02/futurama-slurm-poster.jpg);
+	background-size: cover;
+	height: 400px;
+	width: 638px;
+}
+
+.productSection #productLeft2{
+	background: url(https://img04.deviantart.net/5e23/i/2014/041/a/5/skyrim_skooma_wallapaper_by_askskullyy-d75wnzz.png);
+	background-size: cover;
+	height: 400px;
+	width: 638px;
+}
+
+.productSection #productRight2{
+	background: url(https://images4.sw-cdn.net/product/picture/710x528_12858382_7799140_1479998099.jpg);
+	background-size: cover;
+	height: 400px;
+	width: 638px;
+}
+
+.explore {
+	font-family: "Yantramanav", sans-serif;
+	font-size:24px;
+	display: inline-block;
+	margin: 10px 250px;
+	padding: 5px 5px;
+	background: rgba(0,0,255,.5);
+	border-radius: 10px;
+	border-width: 1px blue
+}
+.explore a{
+	text-decoration: none;
+	color: white;
+}
+

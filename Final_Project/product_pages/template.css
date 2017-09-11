@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+
+body{
+	
+}
+
+#sidebar{
+	margin: 0 auto;
+	padding: 0;
+	font-family: "Helverta Neue", Helvetica, Arial;
+
+	background:#151718;
+	width: 200px;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -200px; /* Just (-1 x width) */
+	transition: left 0.3s linear; /*take this left value and transition to it when .visible doesn't exist*/
+	z-index: 10; /*This will allow the verticle bar to go on top of the page elements*/
+}
+
+#sidebar.visible{
+	left:0;
+	transition: left 0.3s linear; /*take this left value and transition to it to
+	the left value of sidebar.visible when transition exists. We will add/remove this
+	with JS*/
+}
+
+ul{
+	margin:0;
+	padding: 0;
+	text-align: center;
+	padding-top: 50px;
+}
+ul li{
+	list-style: none;
+}
+
+ul li:hover{
+	border: #CDBFD6 solid 2px;
+	transition: .3s;
+}
+
+ul li a{
+	background:#1C1E1F;
+	color: #ccc;
+	border-bottom: 1px solid #111;
+	display: block;
+	width: 180px;
+	padding: 10px;
+	text-decoration: none;
+}
+
+#sidebarButton{
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 18px;
+	cursor: pointer;
+	margin: 20px;
+	position: absolute;
+	top: 20px;
+	right: -90px;
+	padding: 6px 6px;
+	border-radius: 20%;
+	background: #ccc;
+}
+#sidebarButton span{
+	height: 3px;
+	background:#5C69B0;
+	margin-bottom: 5px;
+	display: block; 
+}
+#sidebarButton:hover{
+	background: #eee;
+}
+
+
+
+#logo{
+	font-family: 'Lobster', cursive;
+	font-size: 42px;
+	color: #5C69B0;
+	padding-right: 55%;
+	padding-left: 150px;
+	padding-top: 30px;
+}
+
+.topbar{
+	display: inline-block;
+	padding-top: 10px;
+}
+
+section #cart {
+	font-family: "Yantramanav", sans-serif;
+	font-size: 42px;
+	padding-right: 10px;
+}
+section #cartCounter{
+	font-family: "Yantramanav", sans-serif;
+	font-size: 28px;
+
+	height: 15px;
+	width: 15px;
+	border-radius: 50%; 
+}
+section #fillCounter {
+	background: rgba(255,0,0,.5);
+	width: 24px;
+	height: 24px;
+	position: relative;
+	top: 28px;
+	left: -4.8px;
+	border-radius: 50%;
+}
+
+/*=========================================================================*/
+
+#topbar{
+	width: 100%;
+	height: 100px;
+	background: white;
+	border-bottom: solid black 1px;
+	z-index: 7;
+}
+#topbar, #sidebar{
+	position: fixed;
+	top: 0;
+}
+
+/*=========================================================================*/
+
+.intro{
+	text-align: center;
+}
+.intro #pageTitle{
+	font-family: "Yantramanav", sans-serif; 
+	font-size: 50px;
+	font-weight: bold;
+	padding: 150px 0px 0px 0px;
+
+}
+.intro #pageTagline{
+	font-family: "Yantramanav", sans-serif; 
+	font-size: 30px;
+	padding: 0px 0px 30px 0px;
+}
+
+.intro #homeImage{
+	background: url(https://i.ytimg.com/vi/Kar3mxwnEWw/maxresdefault.jpg);
+	background-size: cover;
+	height: 500px;
+	width: 1280px;
+	margin: auto;
+}
+
+/*------------------Template page Copy n' paste ends here (from home.css)-------------*/
+
+.productDetails{
+	text-align: center;
+	font-family: "Yantramanav", sans-serif; 
+	font-size: 50px;
+	margin-top: 150px;
+}
+
+.productDetails #productTitle{
+	padding-bottom: 20px;
+	font-size: 50px;
+}
+
+.productDetails p{
+	width: 65%;
+	position: relative;
+	left: 20%;
+	font-size: 28px;
+}
+
+.productDetails #productVideo{
+	padding-top: 125px;
+}
+
+.productDetails #indexImage{
+	background: url(https://memestatic.fjcdn.com/pictures/Portal_7c61f5_6201427.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: 40px;
+	position: relative;
+	left: 21%;
+	height: 450px;
+	width: 800px;
+	border: black solid 2px;
+}
+
+
