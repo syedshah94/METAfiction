@@ -7,8 +7,10 @@
 	<link href="../landing_page/css/animate.css" rel="stylesheet"/>
 	<!-- Obtained from:  https://daneden.github.io/animate.css/ -->
 
-	<!-- Font awesome library (probably will not use)-->
+	<!-- Font awesome library-->
 	<!-- <link href="css/font-awesome.min.css" rel="stylesheet" /> -->
+	<script src="https://use.fontawesome.com/be5878c463.js"></script>
+
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 	</script>
@@ -19,7 +21,6 @@
 				$('#sidebar').toggleClass('visible');
 			});
 		});
-
 	</script>
 
 </head>
@@ -29,10 +30,8 @@
 		<ul>
 			<li><a href="home.html">Home</a></li>
 			<li><a href="#productSection">Shop</a></li>
-			<li><a href="#">About</a></li>
-			<!-- <li><a href="#">Contact Me</a></li> -->
+			<li><a href="../about_page/about.html">About</a></li>
 			<li><a href="#openModal">Contact Me</a></li>
-			<li><a href="#">Locations</a></li>
 		</ul>
 
 		<div id="sidebarButton">
@@ -44,7 +43,8 @@
 
 	<section id="topbar">
 		<div id="logo" class="topbar"><a href="home.html">METAfiction</a></div>
-		<div id="cart" class="topbar">Cart</div>
+		<div id="cart" class="topbar"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+</div>
 		<div id="cartCounter" class="topbar"><div id="fillCounter"></div>0</div>
 	</section>	
 	
@@ -92,11 +92,11 @@
 		<div>
 			<a href="#close" title="Close" class="close">X</a>
 			<h2>Contact Box</h2>
-			<form>
+			<form id="contactForm">
 				E-mail: <input type="email" id="emailInput" name="usremail"><br><br>
 				Please submit your comments or concerns below:<br><br>
 				
-				<textarea name="comment" form="usrform" id="textInput">Enter text here...</textarea>
+				<textarea name="comment" form="usrform" id="textInput" placeholder="Enter your response here..."></textarea>
 
 				<a href="#close" id="submitButton" input type="button" title="Close">Submit</a>
 			</form>
