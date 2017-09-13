@@ -3,7 +3,7 @@
 
 
 body{
-	
+	animation-delay: .3s;
 }
 
 #sidebar{
@@ -92,6 +92,11 @@ ul li a{
 .topbar{
 	display: inline-block;
 	padding-top: 10px;
+}
+
+.topbar a{
+	text-decoration: none;
+	color: #5C69B0;
 }
 
 section #cart {

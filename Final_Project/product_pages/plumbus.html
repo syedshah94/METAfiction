@@ -3,10 +3,18 @@
 <head>
 	<title>METAfiction Plumbus</title>
 	<link rel="stylesheet" type="text/css" href="template.css">
+	
 	<!-- Font awesome library-->
 	<!-- <link href="css/font-awesome.min.css" rel="stylesheet" /> -->
+	<script src="https://use.fontawesome.com/be5878c463.js"></script>
+
+	<link href="../landing_page/css/animate.css" rel="stylesheet"/>
+	<!-- Obtained from:  https://daneden.github.io/animate.css/ -->
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 	</script>
+
+	<script src="slideShow.js"></script>
 
 	<script type="text/javascript">
 		$(document).ready(function() {
@@ -17,14 +25,13 @@
 	</script>
 
 </head>
-<body>	
-	<section id="sidebar">
+<body class="animated fadeIn">	
+	<section id="sidebar" class="animated fadeIn">
 		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Shop</a></li>
+			<li><a href="../home_page/home.html">Home</a></li>
+			<li><a href="../home_page/home.html#productSection">Shop</a></li>
 			<li><a href="#">About</a></li>
 			<li><a href="#">Contact Me</a></li>
-			<li><a href="#">Concept Log</a></li>
 			<li><a href="#">Locations</a></li>
 		</ul>
 
@@ -36,7 +43,7 @@
 	</section>
 
 	<section id="topbar">
-		<div id="logo" class="topbar">METAfiction</div>
+		<div id="logo" class="topbar"><a href="../home_page/home.html">METAfiction</a></div>
 		<div id="cart" class="topbar">Cart</div>
 		<div id="cartCounter" class="topbar"><div id="fillCounter"></div>0</div>
 	</section>	
@@ -44,7 +51,20 @@
 	<section class="intro">
 		<div id="pageTitle">Plumbus</div>
 		<br>
-		<div id="homeImage"></div>
+		<!-- <div id="homeImage"></div> -->
+		<img id="img1" class="homeImage"  src="https://images4.sw-cdn.net/product/picture/710x528_12858382_7799140_1479998099.jpg">
+
+		<img id="img2" class="homeImage"  src="https://i.ytimg.com/vi/WkdFZtA378c/maxresdefault.jpg">
+
+		<img id="img3" class="homeImage"  src="https://i.redd.it/ih298g7pmnex.png">
+
+		<img id="img4" class="homeImage"  src="https://i.ytimg.com/vi/4t728j1NAL4/hq720.jpg">
+
+		<img id="img5" class="homeImage"  src="http://i.imgur.com/HKovUqD.png">
+
+		<!-- Left/Right Navigation -->
+        <button id="left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left fa-5x" aria-hidden="true"></i></button>
+        <button id="right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right fa-5x" aria-hidden="true"></i></button>
 	</section>
 
 	<section class="productDetails">
@@ -69,13 +89,16 @@
 	</section>
 
 	<style type="text/css">
-		.intro #homeImage{
-		background: url(https://images4.sw-cdn.net/product/picture/710x528_12858382_7799140_1479998099.jpg);
-		background-size: cover;
+		.intro .homeImage{
 		height: 600px;
 		width: 1000px;
 		margin: auto;
 		border-radius: 5%;
+		display: none;
+		}
+
+		.intro #img1 {
+			display: block;
 		}
 
 		.productDetails #indexImage{
@@ -90,6 +113,7 @@
 			border: black solid 2px;
 		}
 	</style>
+
 
 </body>
 <!-- Add footer if there's time (in footer place FB,Twttr,LkdIn,Email handles) -->

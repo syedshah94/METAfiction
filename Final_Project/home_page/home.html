@@ -3,8 +3,13 @@
 <head>
 	<title>Home METAfiction</title>
 	<link rel="stylesheet" type="text/css" href="home.css">
-	<!-- Font awesome library-->
+
+	<link href="../landing_page/css/animate.css" rel="stylesheet"/>
+	<!-- Obtained from:  https://daneden.github.io/animate.css/ -->
+
+	<!-- Font awesome library (probably will not use)-->
 	<!-- <link href="css/font-awesome.min.css" rel="stylesheet" /> -->
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 	</script>
 
@@ -18,14 +23,13 @@
 	</script>
 
 </head>
-<body>	
+<body class="animated fadeIn">	
 	<section id="sidebar">
 		<ul>
 			<li><a href="home.html">Home</a></li>
-			<li><a href="#">Shop</a></li>
+			<li><a href="#productSection">Shop</a></li>
 			<li><a href="#">About</a></li>
 			<li><a href="#">Contact Me</a></li>
-			<li><a href="#">Concept Log</a></li>
 			<li><a href="#">Locations</a></li>
 		</ul>
 
@@ -37,7 +41,7 @@
 	</section>
 
 	<section id="topbar">
-		<div id="logo" class="topbar">METAfiction</div>
+		<div id="logo" class="topbar"><a href="home.html">METAfiction</a></div>
 		<div id="cart" class="topbar">Cart</div>
 		<div id="cartCounter" class="topbar"><div id="fillCounter"></div>0</div>
 	</section>	
@@ -55,7 +59,7 @@
 		</div>
 
 		<!-- Product section -->
-		<section class="productSection">
+		<section class="productSection" id="productSection">
 		<br>
 			<div id="productLeft" class="twoColumns"></div>
 			<div id="productRight" class="twoColumns"></div>
