@@ -30,7 +30,7 @@
 			<li><a href="../home_page/home.html">Home</a></li>
 			<li><a href="../home_page/home.html#productSection">Shop</a></li>
 			<li><a href="#">About</a></li>
-			<li><a href="#">Contact Me</a></li>
+			<li><a href="#openModal">Contact Me</a></li>
 			<li><a href="#">Locations</a></li>
 		</ul>
 
@@ -103,6 +103,31 @@
 		}
 
 	</style>
+
+
+
+	<!-- MODAL STUFF -->
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>Contact Box</h2>
+		<form>
+			E-mail: <input type="email" id="emailInput" name="usremail"><br><br>
+			Please submit your comments or concerns below:<br><br>
+			
+			<textarea name="comment" form="usrform" id="textInput">Enter text here...</textarea>
+
+			<a href="#close" id="submitButton" input type="button" title="Close">Submit</a>
+		</form>
+		 
+
+		<p>Thanks for participating!<br>Your message will probably not count since this is a fictional site.</p>
+	</div>
+</div>
+<!-- End of modal stuff -->
+
+
+
 
 </body>
 <!-- Add footer if there's time (in footer place FB,Twttr,LkdIn,Email handles) -->
