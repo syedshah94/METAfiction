@@ -37,8 +37,10 @@
 
 	<section id="topbar">
 		<div id="logo" class="topbar"><a href="../home_page/home.html">METAfiction</a></div>
-		<div id="cart" class="topbar"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
-		<div id="cartCounter" class="topbar"><div id="fillCounter"></div>0</div>
+		<div id="cart" class="topbar">
+			<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+		</div>
+		<div id="cartCounter" class="topbar">0</div>
 	</section>	
 
 	<section class="intro">
@@ -59,8 +61,12 @@
 
 		<!-- Left/Right Navigation -->
         <button id="left" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left fa-5x" aria-hidden="true"></i></button>
-        <button id="right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right fa-5x" aria-hidden="true"></i></button>
+        <button id="right" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right fa-5x" aria-hidden="true"></i></button><br><br>
+        <!-- Add to cart button -->
+        <button id="addToCart">Add To Cart</button>
 	</section>
+
+
 
 	<section class="productDetails">
 		<div id="productTitle">Product Description</div>
@@ -102,6 +108,13 @@
 	    	$('#sidebarButton').click(function(){
 	        	$('#sidebar').toggleClass('visible');
 	   		 });
+		});
+
+
+		var cartVal = 0;
+		$('#addToCart').click(function() {
+			cartVal++;
+			$('#cartCounter').html(cartVal);
 		});
 	</script>
 

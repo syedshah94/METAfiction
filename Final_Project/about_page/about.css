@@ -264,7 +264,6 @@ button i{
 	}
 
 	.modalDialog:target {
-		opacity:1;
 		pointer-events: auto;
 	}
 
@@ -289,11 +288,7 @@ button i{
 		width: 24px;
 		text-decoration: none;
 		font-weight: bold;
-		-webkit-border-radius: 12px;
-		-moz-border-radius: 12px;
 		border-radius: 12px;
-		-moz-box-shadow: 1px 1px 3px #000;
-		-webkit-box-shadow: 1px 1px 3px #000;
 		box-shadow: 1px 1px 3px #000;
 	}
 

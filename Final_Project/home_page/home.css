@@ -227,7 +227,7 @@ section #fillCounter {
 	font-size:24px;
 	/*display: inline-block;*/
 	
-	display: inline-flex; /*FLEXBOX REQUIREMENT, I JUST HAVE TO USE IT ONCE*/
+	display: inline-flex; /*FLEXBOX REQUIREMENT*/
 	
 	margin: 10px 250px;
 	padding: 5px 5px;
