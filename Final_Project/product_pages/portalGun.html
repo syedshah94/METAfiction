@@ -3,7 +3,7 @@
 <head>
 	<title>METAfiction Portal Gun</title>
 	<link rel="stylesheet" type="text/css" href="template.css">
-	<script type="text/javascript" src="slideShow.js"></script>
+	<link rel="icon" href="https://maxcdn.icons8.com/Share/icon/nolan/Shopping//shopping_cart1600.png">
 
 	<!-- Font awesome library-->
 	<!-- <link href="css/font-awesome.min.css" rel="stylesheet" /> -->
@@ -87,6 +87,30 @@
 		</section>
 	</section>
 
+	<!-- Footer Section -->
+	<br><br>
+	<hr>
+	<br><br>
+	<section class="footer">
+		<div id="location">We're located all throughout the multiverse!<br>But the page creator resides in NYC</div>
+
+		<div id="verticleLine1" class="verticleLine"></div>
+
+		<div id="socialMedia"><i class="fa fa-facebook-official fa-5x" aria-hidden="true"></i> 
+		<i class="fa fa-twitter-square fa-5x" aria-hidden="true"></i> 
+		<i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i> 
+		</div>
+
+		<div id="verticleLine2" class="verticleLine"></div>
+
+		<div id="hours">
+			We're pretty much always open<br>
+			24/7 (Earth Time)<br>
+			Convert from Earth time to yours...
+		</div>
+	</section>
+	<!-- End Footer Section -->
+
 
 <!-- This script was not working in its own JS file for some reason (i spent an hour, and the code shared in the same file would work if this was commented, but for some reason it works perfectly fine here) -->
 	<style type="text/css">
@@ -102,21 +126,6 @@
 			display: block;
 		}
 	</style>
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-	    	$('#sidebarButton').click(function(){
-	        	$('#sidebar').toggleClass('visible');
-	   		 });
-		});
-
-
-		var cartVal = 0;
-		$('#addToCart').click(function() {
-			cartVal++;
-			$('#cartCounter').html(cartVal);
-		});
-	</script>
 
 
 <!-- MODAL STUFF -->
@@ -140,7 +149,22 @@
 <!-- End of modal stuff -->
 
 
+
+<!-- Javascript Stuff -->
+<script type="text/javascript" src="slideShow.js"></script>
+<script src="cart.js"></script>	
+
+<script type="text/javascript">
+	$(document).ready(function() {
+    	$('#sidebarButton').click(function(){
+        	$('#sidebar').toggleClass('visible');
+   		 });
+	});
+</script>
+
+
 </body>
 <!-- Add footer if there's time (in footer place FB,Twttr,LkdIn,Email handles) -->
 <!-- Place Contact info -->
+
 </html>

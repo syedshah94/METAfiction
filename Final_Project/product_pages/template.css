@@ -312,6 +312,61 @@ button i{
 	/*End of modal stuff */
 /*=============================================================================*/
 
+/*=============================================================================*/
 
+/*Start of footer*/
 
+.footer{
+	display: inline-flex;
+	text-align: center;
+	position: relative;
+	padding-top: 20px;
+
+	font-family: "Helverta Neue", Helvetica, Arial;
+	font-size: 20px;
+
+}
+.footer #location{
+	position: relative;
+	left: 10%;
+}
+
+.footer #socialMedia{
+	position: relative;
+	left: 23%;
+}
+.footer #hours{
+	position: relative;
+	left: 33%;
+}
+
+.footer .fa-facebook-official{
+	font-weight: bold;
+	color: #3B5998
+}
+.footer .fa-twitter-square{
+	font-weight: bold;
+	color: #00aced;
+}
+.footer .fa-linkedin-square{
+	font-weight: bold;
+	color: #0077B5;
+}
+
+.footer .verticleLine{
+	height: 150px;
+	bottom: 30px;
+}
+.footer #verticleLine1{
+	border: 1px black solid;
+	position: relative;
+	left: 15%;
+}
+.footer #verticleLine2{
+	border: 1px black solid;
+	position: relative;
+	left: 30%;
+}
+
+/*End of footer*/
 

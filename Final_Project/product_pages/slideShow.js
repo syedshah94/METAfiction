@@ -16,9 +16,3 @@ function showDivs(n){
 }
 
 
-// //Side bar AKA Nav bar
-// $(document).ready(function() {
-//     $('#sidebarButton').click(function(){
-//         $('#sidebar').toggleClass('visible');
-//     });
-// });

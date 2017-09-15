@@ -4,24 +4,22 @@
 	<title>Home METAfiction</title>
 	<link rel="stylesheet" type="text/css" href="home.css">
 
+	<link rel="icon" href="../../home.png">
+
+
 	<link href="../landing_page/css/animate.css" rel="stylesheet"/>
 	<!-- Obtained from:  https://daneden.github.io/animate.css/ -->
 
 	<!-- Font awesome library-->
 	<!-- <link href="css/font-awesome.min.css" rel="stylesheet" /> -->
 	<script src="https://use.fontawesome.com/be5878c463.js"></script>
+	<script type="text/javascript" src="../cart.js"></script>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 	</script>
 
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#sidebarButton').click(function(){
-				$('#sidebar').toggleClass('visible');
-			});
-		});
-	</script>
+
 
 </head>
 
@@ -42,11 +40,12 @@
 	</section>
 
 	<section id="topbar">
-		<div id="logo" class="topbar"><a href="home.html">METAfiction</a></div>
-		<div id="cart" class="topbar"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
-</div>
-		<div id="cartCounter" class="topbar"><div id="fillCounter"></div>0</div>
-	</section>	
+		<div id="logo" class="topbar"><a href="../home_page/home.html">METAfiction</a></div>
+		<div id="cart" class="topbar">
+			<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+		</div>
+		<div id="cartCounter" class="topbar">0</div>
+	</section>
 	
 
 	<section class="intro">
@@ -107,7 +106,39 @@
 	</div>
 	<!-- End of modal stuff -->
 
+	<!-- Footer Section -->
+	<br><br>
+	<hr>
+	<br><br>
+	<section class="footer">
+		<div id="location">We're located all throughout the multiverse!<br>But the page creator resides in NYC</div>
+
+		<div id="verticleLine1" class="verticleLine"></div>
+
+		<div id="socialMedia"><i class="fa fa-facebook-official fa-5x" aria-hidden="true"></i> 
+		<i class="fa fa-twitter-square fa-5x" aria-hidden="true"></i> 
+		<i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i> 
+		</div>
+
+		<div id="verticleLine2" class="verticleLine"></div>
+
+		<div id="hours">
+			We're pretty much always open<br>
+			24/7 (Earth Time)<br>
+			Convert from Earth time to yours...
+		</div>
+	</section>
+	<!-- End Footer Section -->
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+	    	$('#sidebarButton').click(function(){
+	        	$('#sidebar').toggleClass('visible');
+	   		 });
+		});
+	</script>
+
 </body>
-<!-- Add footer if there's time (in footer place FB,Twttr,LkdIn,Email handles) -->
-<!-- Place Contact info -->
+
+
 </html>
