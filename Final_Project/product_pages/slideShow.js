@@ -8,13 +8,13 @@ function plusDivs(direction) {
 }
 
 function showDivs(direction){
-    let classArray =document.getElementsByClassName("homeImage");
+    let classArray = document.getElementsByClassName("homeImage");
     if(direction > classArray.length) {slideIndex=1} //For when you go past array length
-    if(direction < 1) {slideIndex=classArray.length} //For when you go "before" array length   
+    if(direction < 1) {slideIndex = classArray.length} //For when you go "before" array length   
     for(let i = 0; i<classArray.length; i++){
-        classArray[i].style.display="none";
+        classArray[i].style.display= "none";
     }
-    classArray[slideIndex-1].style.display ="block"; //array indexed at "0", use -1 to resolve
+    classArray[slideIndex-1].style.display = "block"; //array indexed at "0", use -1 to resolve
 }
 
 
