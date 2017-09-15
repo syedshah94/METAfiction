@@ -200,7 +200,7 @@ button i{
 	color: white;
 }
 
-/*------------------Template page Copy n' paste ends here (from home.css)-------------*/
+/*------------------Template page Copy n' Paste ends here (from home.css)-------------*/
 
 .productDetails{
 	text-align: center;
@@ -270,7 +270,7 @@ button i{
 		bottom: 0;
 		left: 0;
 		background: rgba(0,0,0,0.8);
-		z-index: 99999;
+		z-index: 999;
 		opacity:0;
 		transition: opacity 400ms ease-in;
 		pointer-events: none;
@@ -281,7 +281,7 @@ button i{
 		pointer-events: auto;
 	}
 
-	.modalDialog > div {
+	.modalDialog div {
 		width: 600px;
 		height: 500px;
 		position: relative;
@@ -307,7 +307,7 @@ button i{
 		box-shadow: 1px 1px 3px #000;
 	}
 
-	.close:hover { background: #00d9ff; }
+	.close:hover { background: #0059ff; }
 
 	/*End of modal stuff */
 /*=============================================================================*/
